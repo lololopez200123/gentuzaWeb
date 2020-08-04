@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <title>Gentuza</title>
+</head>
+
+<body>
+  <div class="loader">
+        <img src="imagenes/gtzaLoader.gif" alt="Loader de gentuza">
+    </div>
+  <header>
+    <h1>GENTUZA</h1>
+    <nav id="menu">
+      <ul id="iconos">
+        <li><a href="#menu">Abrir</a></li>
+        <li><a href="#">Cerrar</a></li>
+      </ul>
+      <ul id="botones">
+        <li><a href="#quienesSomos">¿Quiénes Somos?</a></li>
+        <li><a href="#staff">Staff</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id='banner'>
+      <img src="imagenes/logo_gentuza.png" alt="logo de gentuza" id="logoHeader">
+    </div>
+
+    <section id="quienesSomos">
+      <article>
+        <h2><span>¿Quiénes Somos?</span></h2>
+        <p>Somos una comunidad de streamers creada hace unos años, nos conocimos jugando
+          y nos hicimos amigos mientras creábamos contenido.
+        </p>
+        <p>El grupo inicio como un clan de rust, donde invertimos bastantes horas
+          y donde aprendimos todos juntos. Luego nos pasamos al Black Desert. Hoy en día
+          no jugamos mucho juntos pero pasamos mucho tiempo en discord hablando y jugando ocacionalmente
+        </p>
+        <p>Hemos decidido expandir el grupo y ayudar a gente a configurar su stream. Asi que
+          no importa tu país, o el tipo de contenido al que te dediques, si eres buena onda,
+          activo y te gustaría pertenecer a un grupo en el cual poder encontrar apoyo, pedir
+          consejos sobre temas relacionados con la configuración, grabación o transmisión
+          este es tu grupo.
+        </p>
+      </article>
+    </section>
+
+
+    <section id="staff" class="carousel">
+      <div id="staffDesc"></div>
+      <h2><span>Staff</span></h2>
+      <div class="slider">
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+        <input type="radio" name="slider" title="slide2" class="slider__nav" />
+        <input type="radio" name="slider" title="slide3" class="slider__nav" />
+        <input type="radio" name="slider" title="slide4" class="slider__nav" />
+        <input type="radio" name="slider" title="slide5" class="slider__nav" />
+        <div class="slider__inner">
+          <div class="slider__contents">
+            <img src="imagenes/sailentk.png" alt="Logo SailentK" data-name="sailentk" class="carousel_img">
+            <p class="slider__txt">Sailentk</p>
+          </div>
+          <div class="slider__contents">
+            <img src="imagenes/juanito.png" alt="Logo Juanito" data-name="juanito" class="carousel_img">
+            <p class="slider__txt">Juanito</p>
+          </div>
+          <div class="slider__contents">
+            <img src="imagenes/nueve.png" alt="Logo Nueve" data-name="nueve" class="carousel_img">
+            <p class="slider__txt">Nueve</p>
+          </div>
+          <div class="slider__contents">
+            <img src="imagenes/ghost.png" alt="Logo Ghost" data-name="ghost" class="carousel_img">
+            <p class="slider__txt">GcGhost</p>
+          </div>
+          <div class="slider__contents">
+            <img src="imagenes/morgan.png" alt="Logo Morgan" data-name="morgan" class="carousel_img">
+            <p class="slider__txt">Mr. Morgan</p>
+          </div>
+        </div>
+      </div>
+      <!--        NoName - Entre las Sombras
+            _  _
+           (.)(.)
+          /  ()  \
+        _ \ '--' / _
+       { '-`""""`-' }
+        `"/      \"`
+          \      /
+         _/  /\  \_
+        {   /  \   }
+         `"`    `"`-->
+
+    </section>
+
+    <section id="contacto">
+      <h2><span>Contacto</span></h2>
+      <form action="estilos/enviar_formulario.php" method="POST">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="formNombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="mail">Mail</label>
+          <input type="text" id="formMail" name="mail" required type="email">
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="formMensaje" cols="30" rows="10" required></textarea>
+        </div>
+        <button type="submit" id="formEnviar">ENVIAR</button>
+      </form>
+
+    </section>
+
+    <footer>
+      <div class="footerLg">
+        <h2>Nuestras Redes</h2>
+        <div id="redes">
+          <a href="https://discord.gg/ZZHsYuG" class="redesImg"><img src="imagenes/discord-01.svg"
+              alt="icono de discord de gentuza"></a>
+          <a href="https://www.instagram.com/gtza.gentuza"><img src="imagenes/instagram-01.svg"
+              alt="icono de instagram de gentuza"></a>
+          <a href="https://twitter.com/GGentuza"><img src="imagenes/twitter-01.svg"
+              alt="icono de twitter de gentuza"></a>
+        </div>
+      </div>
+      <div class="footerLogo">
+        <img src="imagenes/logo_gentuza.png" alt="logo de gentuza" id="logoFooter">
+      </div>
+      <p>GENTUZA</p>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
